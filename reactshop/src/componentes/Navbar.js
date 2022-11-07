@@ -4,6 +4,9 @@ import Nav from '../../node_modules/react-bootstrap/Nav';
 import Navbar from '../../node_modules/react-bootstrap/Navbar';
 import NavDropdown from '../../node_modules/react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Cartshop from './CartWidget.js';
+
+
 function header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -12,24 +15,44 @@ function header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+             <NavDropdown title="Polos" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Polos</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                PeruPool
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Adidas</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Nike
+              </NavDropdown.Item>
+            </NavDropdown>
+             <NavDropdown title="Shorts" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Jean</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Dril
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Gamarra</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Totem
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Zapatos" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Adidas</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Puma
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Nike</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Jordan
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link href="#deets"> </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Cartshop/>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
