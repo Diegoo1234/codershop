@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-  import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
   
 function Cartshop() {
