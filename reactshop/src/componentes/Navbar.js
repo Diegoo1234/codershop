@@ -24,7 +24,7 @@ function header() {
             </NavDropdown>
               
           </Nav>
-          <Nav>
+          <Nav> 
             <Link to="categoria/22"> </Link>
             
             <Nav.Link eventKey={2} href="#memes">
