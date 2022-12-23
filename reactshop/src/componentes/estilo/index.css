@@ -1,0 +1,134 @@
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.product-detail__img {
+  width: 100%;
+  max-width: 585px;
+}
+
+.product-detail__info {
+  text-align: center;
+}
+
+.product-detail__info h2 {
+  margin: 30px 0;
+}
+
+.product-detail__info p {
+  margin: 30px 0;
+  text-align: left;
+}
+.info-grid {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  gap: 20px 0;
+}
+
+.info-grid li {
+  text-align: left;
+}
+
+@media only screen and (min-width: 800px) {
+  .product-detail {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+.count-container__contador {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  width: 140px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 40px auto 0;
+}
+
+.count-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.count-container__button {
+  color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border-color);
+  font-size: 1.6rem;
+  transition: all 250ms ease-out;
+}
+
+.count-container__button:hover {
+  border: none;
+  color: var(--just-white);
+  cursor:pointer;
+}
+
+.count-container__button[disabled] {
+  color: var(--border-color);
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+}
+
+.count-container__qty {
+  height: 100%;
+  padding-top: 10px;
+  color: var(--primary-color);
+  background-color: var(--just-white);
+}
+
+.count-container .button-finalizar-compra{
+  display: block;
+  width: 180px;
+  padding: 6px 12px ;
+}
+.anadir{
+border:0px !important;    
+}
+li{
+    list-style: none;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card__image {
+  width: 320px;
+}
+
+.product-card__name {
+  font-size: 1.6rem;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+.cart-widget {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.qty-display {
+  display: inline-block;
+  width: 15px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  text-align: center;
+  line-height: 17px;
+  color: black;
+}

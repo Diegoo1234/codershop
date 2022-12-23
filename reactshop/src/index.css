@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.msg_producto{
+font-size: 30px;
+color: #000;
+font-weight: 700;
+text-align: center;
+padding-top: 15px;
+}
+.pointer{
+cursor: pointer;    
+}

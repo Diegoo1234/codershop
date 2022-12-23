@@ -27,7 +27,7 @@ function header() {
           <Nav> 
             <Link to="categoria/22"> </Link>
             
-            <Nav.Link eventKey={2} href="#memes">
+            <Nav.Link eventKey={2}  >
             <Cartshop/>
             </Nav.Link>
           </Nav>
